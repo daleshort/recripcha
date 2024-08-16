@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+} */
+
+.title{
+  font-family: 'Alexandria', sans-serif;
+}
+
+.title-highlight{
+  color: blue;
+}
+
+.spinner {
+  font-size: 2em;
+
+}
+
+.spinner-active{
+  animation: spin-animation 0.5s infinite;
+  animation-timing-function: linear;
+  display: inline-block;
+}
+
+.spinner-shrink{
+  animation-name: shrink-animation;
+  animation-duration: .2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+
+.spinner-expand{
+  animation-name: expand-animation;
+  animation-duration: .2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  display: inline-block;
+}
+
+
+
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shrink-animation {
+  0% {
+    transform: scale(1,1);
+  }
+  100% {
+    transform: scale(0,0);
+  }
+}
+
+@keyframes expand-animation {
+  0% {
+    transform: scale(0,0);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
